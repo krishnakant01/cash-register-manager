@@ -7,9 +7,15 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");
 const denominations = [2000, 500, 100, 50, 10, 5, 1];
 
 function validateBillAndCashAmount() {
+
     errorMessage.style.display = "none";
     if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
+        // console.log(typeof cashGiven.value);
+        //  console.log(typeof billAmount.value);
+        //  console.log("Subtraction ",typeof(cashGiven.value - billAmount.value));
+
+        if (Number(cashGiven.value) >= Number(billAmount.value)) {
+
             const amountToBeReturned = cashGiven.value - billAmount.value;
             console.log(amountToBeReturned);
             calculateChange(amountToBeReturned);

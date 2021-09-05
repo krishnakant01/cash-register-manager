@@ -1,0 +1,16 @@
+.container{
+    max-width: 50%;
+    margin: auto;
+    background-color:green;
+    padding: 1rem;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+td,th{
+    border: 1px solid #dddddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
