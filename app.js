@@ -41,7 +41,7 @@ function validateCashAmount() {
         if (Number(cashGiven.value) > Number(billAmount.value)) {
 
             const amountToBeReturned = cashGiven.value - billAmount.value;
-            returnAmountDisplay.style.display = "block";
+            returnAmountDisplay.style.display = "inline";
             returnAmountCaption.style.display = "block";
             returnAmountDisplay.style.color = "green";
             returnAmountDisplay.innerText ="₹ "+ amountToBeReturned;
